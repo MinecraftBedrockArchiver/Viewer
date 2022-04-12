@@ -1,7 +1,8 @@
 {
-  "name": "minecraftbedrockarchiveviewer",
+  "name": "viewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://minecraftbedrockarchiver.github.io/Viewer/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
