@@ -136,8 +136,7 @@ function MetaPage () {
             <th scope='col'>Version</th>
             <th scope='col'>Archive</th>
             <th scope='col'>Architecture</th>
-            <th scope='col'>MD5</th>
-            <th scope='col'>SHA256</th>
+            <th scope='col'>Hashes</th>
             <th scope='col'>&nbsp;</th>
           </tr>
         </thead>
@@ -208,11 +207,15 @@ function MetaPage () {
                 </div>
                 <div className='mb-1'>
                   <b>MD5 hash:</b><br />
-                  {currentDetails.md5}
+                  <span className='font-monospace'>{currentDetails.md5 || 'None'}</span>
                 </div>
                 <div className='mb-1'>
                   <b>SHA256 hash:</b><br />
-                  {currentDetails.sha256}
+                  <span className='font-monospace'>{currentDetails.sha256 || 'None'}</span>
+                </div>
+                <div className='mb-1'>
+                  <b>SHA1 hash:</b><br />
+                  <span className='font-monospace'>{currentDetails.sha1 || 'None'}</span>
                 </div>
               </div>
             </div>
