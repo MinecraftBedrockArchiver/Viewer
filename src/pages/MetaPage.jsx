@@ -95,7 +95,8 @@ function MetaPage () {
       const searchLower = filterSearch.toLowerCase()
       results = results.filter((entry) => entry.version.toLowerCase().includes(searchLower) ||
         (entry.md5 !== null && entry.md5.toLowerCase().includes(searchLower)) ||
-        (entry.sha256 !== null && entry.sha256.toLowerCase().includes(searchLower)))
+        (entry.sha256 !== null && entry.sha256.toLowerCase().includes(searchLower)) ||
+        (entry.sha1 !== null && entry.sha1.toLowerCase().includes(searchLower)))
     }
 
     return results.sort((a, b) => a.version.localeCompare(b.version, undefined, { numeric: true, sensitivity: 'base' }))
