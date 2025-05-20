@@ -113,6 +113,7 @@ function MetaPage () {
           arch: arch,
           md5: archData.Hashes.MD5,
           sha256: archData.Hashes.SHA256,
+          sha1: archData.Hashes.SHA1,
           file: archData.FileName
         })
       }
